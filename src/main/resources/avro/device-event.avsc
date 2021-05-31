@@ -1,0 +1,64 @@
+{
+  "name": "DeviceEvent",
+  "namespace": "com.hraman.live.deg",
+  "type": "record",
+  "fields": [
+    {
+      "name": "device_id",
+      "type": "string"
+    },
+    {
+      "name": "charging",
+      "type": "int"
+    },
+    {
+      "name": "charging_source",
+      "type": {
+        "type": "enum",
+        "namespace": "com.hraman.live.deg",
+        "name": "ChargingSource",
+        "symbols": [
+          "solar",
+          "utility"
+        ]
+      }
+    },
+    {
+      "name": "current_capacity",
+      "type": "int"
+    },
+    {
+      "name": "moduleL_temp",
+      "type": "int"
+    },
+    {
+      "name": "moduleR_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor1_temp",
+      "type": "int"
+    },
+
+    {
+      "name": "processor2_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor3_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor4_temp",
+      "type": "int"
+    },
+    {
+      "name": "inverter_state",
+      "type": "int"
+    },
+    {
+      "name": "SoC_regulator",
+      "type": "int"
+    }
+  ]
+}
