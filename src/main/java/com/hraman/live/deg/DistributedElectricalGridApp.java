@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 
 public class DistributedElectricalGridApp extends Application<DistributedElectricalConfig> {
-    private Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public static void main(String[] args) throws Exception {
         new DistributedElectricalGridApp().run(args);
