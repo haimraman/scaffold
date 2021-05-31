@@ -77,7 +77,7 @@ hs_err_pid*
 
 # Generated files
 .idea/**/contentModel.xml
-
+.iml
 # Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids

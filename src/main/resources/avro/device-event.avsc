@@ -18,8 +18,8 @@
         "namespace": "com.hraman.live.deg",
         "name": "ChargingSource",
         "symbols": [
-          "solar",
-          "utility"
+          "SOLAR",
+          "UTILITY"
         ]
       }
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "SoC_regulator",
-      "type": "int"
+      "type": "float"
     }
   ]
 }

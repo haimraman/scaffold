@@ -23,6 +23,7 @@
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <junit5.version>5.7.0</junit5.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
@@ -222,13 +223,19 @@
     </dependency>
 
     <!-- Testing -->
-    <!-- ******* -->
     <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit5.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- ******* -->
+    <!-- <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
 
     <!-- Kafka for Junit Tests -->
     <!-- use: https://github.com/salesforce/kafka-junit/tree/master/kafka-junit4#kafkatestserver -->
