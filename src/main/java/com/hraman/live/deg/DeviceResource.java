@@ -13,7 +13,7 @@ public class DeviceResource {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @POST
-    public void deviceEvent(@PathParam("id") String id, String event) {
-        log.info(event);
+    public void deviceEvent(@PathParam("id") String id, DeviceEvent event) {
+        log.info("Got {}",event.getDeviceId());
     }
 }
